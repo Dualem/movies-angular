@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { MoviesService } from '../../services/movies.service';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,20 +12,11 @@ export class HomeComponent implements OnInit {
   }
   movies: object = {};
 
-  constructor(private moviesService: MoviesService) { 
+  constructor() { 
   }
 
   ngOnInit(): void {
-    this.getMovies()
   }
 
-  getMovies() {
-    this.moviesService.getMovies()
-      .subscribe(result => {
-        this.movies = result;
-        console.log(result);
-      })
-        
-  }
 
 }

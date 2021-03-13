@@ -9,7 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StoreModule } from '@ngrx/store';
 import { HomeComponent } from './components/home/home.component';
 import { MoviesComponent } from './containers/movies/movies.component';
-import { NavbarComponent } from './components/navbar/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MovieComponent } from './containers/movie/movie.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar/navbar.component';
     AppComponent,
     HomeComponent,
     MoviesComponent,
-    NavbarComponent
+    NavbarComponent,
+    MovieComponent
   ],
   imports: [
     HttpClientModule,
